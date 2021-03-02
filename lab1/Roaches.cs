@@ -19,7 +19,6 @@ namespace lab1
 		public virtual void Move()
         {
             Console.WriteLine("Speed is ");
-            //return true;
         }
 
 
