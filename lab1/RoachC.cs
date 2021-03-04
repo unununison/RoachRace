@@ -31,6 +31,8 @@ namespace lab1
                     cursorCord++;
                 }
             }
+            else
+                Thread.Sleep(speed*25);
         }
 	}
 }

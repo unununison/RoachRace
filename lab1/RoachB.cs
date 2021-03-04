@@ -18,20 +18,22 @@ namespace lab1
                 Console.SetCursorPosition(0, 1);
                 for (int i = 0; i < speed; i++)
                 {
-					if (cursorCord % 20 == 0) speed++;
-					Console.SetCursorPosition(cursorCord, 1);
-					Console.Write("=");
-					Console.SetCursorPosition(cursorCord - 1, 1);
-					Console.Write(".");
-					Thread.Sleep(25);
-					if (cursorCord == 42)
-					{
-						isFinished = true;
-						break;
-					}
-					cursorCord++;
-                }              
+                    if (cursorCord % 20 == 0) speed++;
+                    Console.SetCursorPosition(cursorCord, 1);
+                    Console.Write("=");
+                    Console.SetCursorPosition(cursorCord - 1, 1);
+                    Console.Write(".");
+                    Thread.Sleep(25);
+                    if (cursorCord == 42)
+                    {
+                        isFinished = true;
+                        break;
+                    }
+                    cursorCord++;
+                }
             }
+            else
+                Thread.Sleep(speed * 25);
         }
     }
 }
